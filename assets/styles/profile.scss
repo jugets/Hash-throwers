@@ -14,6 +14,12 @@
     border: none;
 }
 
+#logo {
+    width: 10em;
+    margin-left: 300px;
+    border: none;
+}
+
 .body-page {
     display: flex;
     flex-direction: column;
@@ -27,15 +33,13 @@
             background:$secondary-orange; 
             padding: 7px 15px; 
             border-radius: 70% 70%;
-            width: 600px;
-            color: $primary-black;
         }
     .bubble-text::after{
         margin-left: 200px;
         content:""; 
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
-        border-top: 20px solid $primary-orange;
+        border-top: 20px solid $secondary-orange;
         position: absolute;
     }
     h2 {
@@ -54,7 +58,7 @@
         content: '';
         display: block;
         position: absolute;
-        bottom: 0px;
+        bottom: 1px;
         width: 0%;
         left: 0px;
         height: 2px;

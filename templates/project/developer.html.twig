@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProjectController!{% endblock %}
+{% block title %}Developer{% endblock %}
 
 {% block body %}
 <div class="d-flex align-items-start">
@@ -11,16 +11,15 @@
 			<img class="loupe" src="{{ asset('build/images/loupe.png') }}">
 
             <div>
-                <img class="logo aside" width="60" src="{{ asset('build/images/logos/logo-dark.png') }}">
+                <img id="logo" alt="logo aside" src="{{ asset('build/images/logos/logo-dark.png') }}">
             </div>
 		</div>
 
-
         <div class="bubble">
-            <div class="bubble-text">
-            <h2 class="text-center mt-3">What are you looking for ?</h2>
-                <p class="text-center">A feature<a href="#"> >></a></p>
-                <p class="text-center">A project<a href="{{ path('project') }}"> >></a></p>
+            <div class="bubble-text mt-5 mb-5">
+            <h2 class="text-center mt-4">What are you looking for ?</h2>
+                <p class="text-center"><a href="#">A feature</a></p>
+                <p class="text-center"><a href="{{ path('project') }}">A project</a></p>
             </div>
         </div>
     </div>
