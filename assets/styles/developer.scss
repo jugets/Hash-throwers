@@ -1,0 +1,53 @@
+.navbar-reduce {
+    width: 70px;
+    background-color: gray;
+    height: 100vh;
+}
+
+.search {
+    width: 600px;
+}
+
+#search-input {
+    width: 10em;
+    margin-left: 300px;
+    border: none;
+}
+
+.body-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bubble {
+    margin-left: 600px;
+    margin-top: 50px;
+    .bubble-text {
+            background:$primary-orange; 
+            padding: 7px 15px; 
+            border-radius: 70% 70%;
+            color: $primary-black;
+        }
+    }
+    .bubble-text::after{
+        margin-left: 200px;
+        content:""; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $primary-orange;
+        position: absolute;
+    }
+    h2 {
+        font-family: $title-font;
+    }
+    p {
+        color: $primary-black;
+        font-family: $text-font;
+    a {
+        list-style-type: none;
+        text-decoration: none;
+        color: $primary-black;
+    }
+}
+
