@@ -1,7 +1,9 @@
 @import "_var.scss";
 @import "Project/list.scss";
+@import "Project/card/_list_card.scss";
 
 body {
+    overflow-x: hidden;
     .apside-header {
         display: flex;
         justify-content: flex-end;

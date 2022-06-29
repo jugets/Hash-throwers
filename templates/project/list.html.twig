@@ -17,6 +17,10 @@
                 </button>
             </div>
         </div>
-        <div class="project-list-main-content-cards"></div>
+        <div class="project-list-main-content-cards">
+            {% for i in 1..5 %}
+                {% include "project/card/_list_card.html.twig" %}
+            {% endfor %}
+        </div>
     </main>
 {% endblock %}

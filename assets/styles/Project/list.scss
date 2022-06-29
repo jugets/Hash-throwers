@@ -2,11 +2,12 @@
 
 .project-list-main-content {
     display: flex;
-    width: 1635px;
+    width: auto;
     height: 895px;
     padding-top: 95px;
     margin-left: 90px;
     padding-left: 120px;
+    margin-right: 210px;
     gap: 20px;
     .project-list-main-content-title {
         position: relative;
@@ -30,12 +31,14 @@
             height: 500px;
             padding-left: 105px;
             .project-list-title-content-subtitle {
+                color: white;
                 font-family: $title-font;
                 font-size: 31px;
                 margin-bottom: 0;
                 line-height: 0px;
             }
             .project-list-title-content-title {
+                color: white;
                 font-family: $title-font;
                 font-weight: 800;
                 font-size: 54px;
@@ -53,7 +56,23 @@
                 width: 217px;
                 height: 53px;
                 margin-top: 20px;
+                transition: 0.2s;
+                &:hover {
+                    background-color: $primary-green;
+                }
             }
         }
+    }
+    .project-list-main-content-cards {
+        overflow-x: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: auto;
+        height: 750px;
+        margin-left: 100px;
+        padding-left: 50px;
+        gap: 50px;
+        padding: 20px 0;
     }
 }
