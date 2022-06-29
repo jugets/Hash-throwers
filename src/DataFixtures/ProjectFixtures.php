@@ -9,16 +9,33 @@ use Doctrine\Persistence\ObjectManager;
 
 class ProjectFixtures extends Fixture implements DependentFixtureInterface
 {
+    public const DOMAIN = [
+        'Bank',
+        'Aeronautics',
+        'Industrial engineering',
+        'IT expertise',
+        'Information systems engineering',
+    ];
+
+    public const TYPE = [
+        'Static',
+        'Dynamic',
+        'E-shop',
+        'Showcase site',
+        'Content management',
+    ];
+
     public function load(ObjectManager $manager): void
     {
-        
-        $project = new Project();
-        $project->setName('Project-1');
-        $project->setDomain('Banque');
-        $project->setType('Static');
-        $project->addFeature($this->getReference('feature_Identification'));
-        $this->addReference('project_Project-1', $project);
-        $manager->persist($project);
+        for ($i = 1; $i < 39; $i++) {
+
+            $project = new Project();
+            $project->setName('Project-' . $i);
+            $project->setDomain($this->randDomain());
+            $project->setType($this->randType());
+            $project->addFeature($this->getReference('feature_' . $i));
+            $manager->persist($project);
+        }
 
         $manager->flush();
     }
@@ -26,7 +43,21 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
     public function getDependencies()
     {
         return [
-          FeatureFixtures::class,
+            FeatureFixtures::class,
         ];
+    }
+
+    private function randDomain(): string
+    {
+        $domainKey = array_rand(self::DOMAIN);
+        $domain = self::DOMAIN[$domainKey];
+        return $domain;
+    }
+
+    private function randType(): string
+    {
+        $typeKey = array_rand(self::TYPE);
+        $type = self::TYPE[$typeKey];
+        return $type;
     }
 }
