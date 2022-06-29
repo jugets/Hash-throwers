@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProjectController!{% endblock %}
+
+{% block body %}
+<div class="d-flex align-items-start">
+    <div class="navbar"></div>
+    <div class="body-page">
+        <div class="search border-1 d-flex m-5">
+            <input type="search" class="form-control" id="search" name="search">
+            <img class="loupe" src="{{ asset('build/images/loupe.png') }}" width="40px">
+        </div>
+
+        <div class="bubble">
+            <div class="bubble-text">
+            <h2 class="text-center">Who are you ?</h2>
+                <p class="text-center">I'm a collaborator<a href="#"> >></a></p>
+                <p class="text-center">I'm a commercial<a href="#"> >></a></p>
+                <p class="text-center">I'm a developer<a href="#"> >></a></p>
+                <p class="text-center">I'm a client<a href="#"> >></a></p>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+
+
+
+
+{% endblock %}
+
