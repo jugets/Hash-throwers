@@ -4,6 +4,16 @@
     height: 100vh;
 }
 
+.search {
+    width: 600px;
+}
+
+#search-input {
+    width: 10em;
+    margin-left: 300px;
+    border: none;
+}
+
 .body-page {
     display: flex;
     flex-direction: column;

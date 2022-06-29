@@ -4,7 +4,16 @@
     height: 100vh;
 }
 
-#search {
-    width: 100%;
+.search {
+    width: 600px;
+}
+
+#search-input {
+    width: 10em;
     margin-left: 300px;
+    border: none;
+}
+
+.loupe {
+    width: 40px;
 }
