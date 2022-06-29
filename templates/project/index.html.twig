@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProjectController!{% endblock %}
+
+{% block body %}
+    <div class="navbar"></div>
+    <div class="search border border-1 d-flex" width="400px">
+        <input type="search" class="form-control" id="search" name="search">
+        <img class="loupe" src="{{ asset('build/images/loupe.png') }}" width="40px">
+    </div>
+{% endblock %}
