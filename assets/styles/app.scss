@@ -1,6 +1,22 @@
+@import "_var.scss";
+@import "Project/list.scss";
+@import "Project/card/_list_card.scss";
+
 body {
-    background-color: lightgray;
+    overflow-x: hidden;
+    .apside-header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 340px;
+        height: 120px;
+        padding-right: 30px;
+        .apside-header-logo {
+            height: 80px;
+        }
+    }
 }
+
 
 @import "~bootstrap/scss/bootstrap";
 @import "var";

@@ -1,0 +1,99 @@
+@import "../_var.scss";
+
+.project-list-border {
+    display: flex;
+    justify-content: flex-end;
+    height: 15px;
+    margin-left: 400px;
+    margin-right: 180px;
+    margin-top: 130px;
+    .project-list-border-line {
+        width: 800px;
+        border-bottom: 2px solid black;
+        margin-right: 5px;
+    }
+    .project-list-border-text {
+        font-family: $title-font;
+        font-weight: bolder;
+        font-size: 11px;
+        margin-bottom: 0;
+        padding-top: 3px;
+    }
+}
+
+.project-list-main-content {
+    display: flex;
+    width: auto;
+    height: 895px;
+    margin-left: 90px;
+    padding-left: 120px;
+    margin-right: 210px;
+    padding-top: 10px;
+    gap: 20px;
+    .project-list-main-content-title {
+        position: relative;
+        width: 695px;
+        height: 750px;
+        .project-list-title-orange-block {
+            top: 0;
+            left: 0;
+            width: 612px;
+            height: 749px;
+            background-color: $primary-orange;
+        }
+        .project-list-title-content {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 125px;
+            left: 230px;
+            width: 450px;
+            height: 500px;
+            padding-left: 105px;
+            .project-list-title-content-subtitle {
+                color: white;
+                font-family: $title-font;
+                font-size: 31px;
+                margin-bottom: 0;
+                line-height: 0px;
+            }
+            .project-list-title-content-title {
+                color: white;
+                font-family: $title-font;
+                font-weight: 800;
+                font-size: 54px;
+                margin-bottom: 5px;
+            }
+            .project-list-title-content-text {
+                font-family: $text-font;
+                font-size: 16px;
+                text-align: justify;
+                margin-bottom: 5px;
+            }
+            .project-list-title-content-button {
+                background-color: transparent;
+                border: 1px solid black;
+                width: 217px;
+                height: 53px;
+                margin-top: 20px;
+                transition: 0.2s;
+                &:hover {
+                    background-color: $primary-green;
+                }
+            }
+        }
+    }
+    .project-list-main-content-cards {
+        overflow-x: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: auto;
+        height: 750px;
+        margin-left: 100px;
+        padding-left: 50px;
+        gap: 50px;
+        padding: 0 0 20px 0;
+    }
+}

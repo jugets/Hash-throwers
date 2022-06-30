@@ -36,6 +36,13 @@ class ProjectController extends AbstractController
     public function projectType(): Response
     {
         return $this->render('project/project_type.html.twig');
+
+    }
+
+    #[Route('/project/list', name: 'project_list')]
+    public function list(): Response
+    {
+        return $this->render('project/list.html.twig');
     }
 
     #[Route('/feature', name: 'feature')]

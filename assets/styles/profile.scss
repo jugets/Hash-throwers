@@ -16,14 +16,20 @@
 
 #logo {
     width: 10em;
-    margin-left: 300px;
-    border: none;
+    margin-top: 50px;
 }
 
 .body-page {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.content-search-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 300px;
 }
 
 .bubble {
