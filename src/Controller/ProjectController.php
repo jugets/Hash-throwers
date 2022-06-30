@@ -17,6 +17,7 @@ class ProjectController extends AbstractController
     #[Route('/profile', name: 'profile')]
     public function profile(): Response
     {
+
         return $this->render('project/profile.html.twig');
     }
 
