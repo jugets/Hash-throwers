@@ -5,15 +5,27 @@
 
 {% block body %}
 
-<div class="d-flex align-items-start">
-    <div class="navbar-reduce"></div>
-    <div class="bubble">
-        <div class="bubble-text mt-5 mb-5">
-        <h2 class="text-center mt-4">What are you looking for ?</h2>
-            <p class="text-center"><a href="{{ path('feature') }}">A feature</a></p>
-            <p class="text-center"><a href="{{ path('project') }}">A project</a></p>
-        </div>
-    </div>
-</div>
- 
+	<div class="d-flex align-items-start">
+		<div class="navbar-reduce"></div>
+
+		<div class="main-container">
+
+			<div>
+				<img class="img-apside-robot" src="{{ asset('build/images/apside_robot_1.png') }}"/>
+			</div>
+
+			<div class="bubble">
+				<div class="bubble-text mt-5 mb-5">
+					<h2 class="text-center mt-4">What are you looking for ?</h2>
+					<p class="text-center">
+						<a href="{{ path('feature') }}">A feature</a>
+					</p>
+					<p class="text-center">
+						<a href="{{ path('project') }}">A project</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 {% endblock %}
