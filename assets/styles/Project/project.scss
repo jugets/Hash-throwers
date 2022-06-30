@@ -1,46 +1,27 @@
+@import "../_var.scss";
+
 .navbar-reduce {
     width: 70px;
     background-color: $secondary-blue;
     height: 100vh;
 }
 
-.search {
-    width: 600px;
-}
-
-#search-input {
-    width: 10em;
-    margin-left: 300px;
-    border: none;
-}
-
-#logo {
-    width: 10em;
-    
-}
-
-.body-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .bubble {
-    margin-left: 20em;
-    margin-top: 50px;
+    margin-left: 50em;
+    margin-top: 5em;
     .bubble-text {
-            background:$secondary-orange; 
-            padding: 7px 15px; 
-            border-radius: 70% 70%;
-            width: 600px;
-            color: $primary-black;
-        }
+        background:$secondary-orange; 
+        padding: 7px 15px; 
+        border-radius: 70% 70%;
+        width: 600px;
+        color: $primary-black;
+    }
     .bubble-text::after{
         margin-left: 200px;
         content:""; 
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
-        border-top: 20px solidsecondary-orange;
+        border-top: 20px solid $secondary-orange;
         position: absolute;
     }
     h2 {

@@ -1,12 +1,29 @@
+@import "~bootstrap/scss/bootstrap";
 @import "_var.scss";
 @import "Project/list.scss";
 @import "Project/card/_list_card.scss";
+@import "Project/index.scss";
+@import "Project/profile.scss";
+@import "Project/developer.scss";
+@import "Project/project.scss";
+@import "Project/project_type.scss";
 
 body {
     overflow-x: hidden;
+    .search {
+        width: 600px;
+        #search-input {
+            width: 10em;
+            margin-left: 300px;
+            border: none;
+        }
+        .loupe {
+            width: 40px;
+        }
+    }
     .apside-header {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-around;
         align-items: center;
         margin-left: 340px;
         height: 120px;
@@ -16,12 +33,3 @@ body {
         }
     }
 }
-
-
-@import "~bootstrap/scss/bootstrap";
-@import "var";
-@import "index";
-@import "profile";
-@import "developer";
-@import "project";
-@import "project_type";
