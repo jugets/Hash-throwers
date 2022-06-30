@@ -16,6 +16,12 @@ class ProjectController extends AbstractController
         return $this->render('project/index.html.twig');
     }
 
+    #[Route('/cry', name: 'index_cry')]
+    public function indexCry(): Response
+    {
+        return $this->render('project/index_cry.html.twig');
+    }
+
     #[Route('/profile', name: 'profile')]
     public function profile(): Response
     {
