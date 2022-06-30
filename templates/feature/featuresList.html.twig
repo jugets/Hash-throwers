@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProjectController!
+{% endblock %}
+
+{% block body %}
+	<div class="d-flex align-items-start">
+		<div class="navbar-reduce"></div>
+		<div class="bubble">
+			<div class="bubble-text row">
+				<h2 class="text-center mt-4 p-3">What type of project ?</h2>
+				<table class="mb-4 text-center">
+					<tbody>
+						<tr class="w-100">
+							<td width="33%">
+								<a href="{{ path('index') }}">API Rest</a>
+							</td>
+							<td width="33%">
+								<a href="{{ path('index') }}">Payment</a>
+							</td>
+							<td width="33%">
+								<a href="{{ path('index') }}">Panier</a>
+							</td>
+						</tr>
+						<tr>
+							<td width="33%">
+								<a href="{{ path('index') }}">Identification</a>
+							</td>
+							<td width="33%">
+								<a href="{{ path('index') }}">Filter</a>
+							</td>
+							<td width="33%">
+								<a href="{{ path('index') }}">Carrousel</a>
+							</td>
+						</tr>
+						<tr>
+							<td width="33%">
+								<a href="{{ path('index') }}">Modal</a>
+							</td>
+							<td width="33%">
+								<a href="{{ path('index') }}">Form</a>
+							</td>
+							<td width="33%">
+								<a href="{{ path('index') }}">Form</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>{% endblock %}

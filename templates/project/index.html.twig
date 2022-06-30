@@ -6,7 +6,14 @@
 {% block body %}
 	<div class="d-flex align-items-start justify">
 		<div class="navbar"></div>
-		<div class="d-flex w-100 justify-content-center">
+            <div class="bubble">
+                <div class="bubble-text">
+                <h2 class="text-center p-3">Hi, I'm here to help you !</h2>
+                <div class="row row-cols-2">
+                    <p class="text-center"><a href="#">No, thanks !</a></p>
+                    <p class="text-center"><a href="{{path('profile')}}">Let's start</a></p>
+                </div>
+            </div>
 		</div>
 	</div>
 {% endblock %}
