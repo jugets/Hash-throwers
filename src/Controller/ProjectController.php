@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ProjectController extends AbstractController
 {
-    #[Route('/project', name: 'app_project')]
+    #[Route('/project', name: 'project')]
     public function index(): Response
     {
         return $this->render('project/index.html.twig', [
@@ -16,7 +16,7 @@ class ProjectController extends AbstractController
         ]);
     }
 
-    #[Route('/project/list', name: 'app_project_list')]
+    #[Route('/project/list', name: 'project_list')]
     public function list(): Response
     {
         return $this->render('project/list.html.twig');
