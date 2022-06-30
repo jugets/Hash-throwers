@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <link href="fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.css">
         <link rel="icon" href="{{ asset('build/images/favicon.png') }}">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
@@ -14,6 +15,7 @@
         {% endblock %}
     </head>
     <body>
+        {% include 'home/partials/_sidebar.html.twig' %}
         <header class="apside-header">
             <div class="search border border-1 d-flex mt-5">
                 <input type="search-input" class="form-control border-0" id="search" name="search">
