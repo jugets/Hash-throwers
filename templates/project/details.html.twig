@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Project Details{% endblock %}
+
+{% block body %}
+    <div class="project-details-border">
+        <span class="project-details-border-line"></span>
+        <p class="project-details-border-text">Detail Project</p>
+    </div>
+    <main class="project-details-main-content">
+        <div class="project-details-first-content">
+            <img class="project-details-first-content-image" src="{{ asset('build/images/card1.jpg') }}">
+            <p class="project-details-first-content-title">Lorem Ipsum functionnality :</p>
+            <p class="project-details-first-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam tellus, fermentum quis nisl in, egestas finibus urna. Nunc blandit ut sapien ut egestas. Aliquam sed risus sit amet odio lobortis porttitor. Donec a commodo sem. Ut vulputate, dui eget scelerisque tincidunt, odio eros scelerisque nisl, dictum sagittis ante turpis id ipsum.</p>
+            <button class="project-details-first-content-button">Require access for this project</button>
+        </div>
+        <div class="project-details-second-content">
+            <p class="project-details-second-content-subtitle">Lorem ipsum functionnality</p>
+            <p class="project-details-second-content-title">LOREM IPSUM PROJECT</p>
+            <p class="project-details-second-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam tellus, fermentum quis nisl in, egestas finibus urna. Nunc blandit ut sapien ut egestas. Aliquam sed risus sit amet odio lobortis porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam tellus, fermentum quis nisl in, egestas finibus urna. Nunc blandit ut sapien ut egestas. Aliquam sed risus sit amet odio lobortis porttitor. Donec a commodo sem. Ut vulputate, dui eget scelerisque tincidunt, odio eros scelerisque nisl, dictum sagittis ante turpis id ipsum.</p>
+            <img class="project-details-second-content-image" src="{{ asset('build/images/card4.jpg') }}">
+        </div>
+        <div class="project-details-background"></div>
+    </main>
+{% endblock %}
