@@ -27,7 +27,7 @@ class ProjectFixtures extends Fixture implements DependentFixtureInterface
 
     public function load(ObjectManager $manager): void
     {
-        for ($i = 1; $i < 39; $i++) {
+        for ($i = 1; $i < 29; $i++) {
 
             $project = new Project();
             $project->setName('Project-' . $i);

@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Repository\FeatureRepository;
+use App\Repository\ProjectRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -52,9 +54,15 @@ class ProjectController extends AbstractController
         return $this->render('feature/language.html.twig');
     }
 
-    #[Route('/feature/language', name: 'feature_language')]
-    public function feature(): Response
+    #[Route('/feature/{language}', name: 'feature_language')]
+    public function feature(FeatureRepository $featureRepository, string $language): Response
     {
-        return $this->render('feature/featuresList.html.twig');
+        if($language == 'all') {
+            $features = $featureRepository->findAll();
+        } else {
+            $features = $featureRepository->findBy(['language' => $language]);
+        }
+        
+        return $this->render('feature/featuresList.html.twig', ['features' => $features]);
     }
 }
