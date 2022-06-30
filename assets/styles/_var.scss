@@ -14,3 +14,26 @@ $primary-black: #464646;
 $secondary-black: #183650;
 $primary-green: #5abdb2;
 
+
+/* Modification of the scrollbar properties */
+/* Works on Firefox */
+* {
+    scrollbar-width: none;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+    margin-left: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: none;
+    border-right: 1px solid $secondary-black;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: $primary-orange;
+    border-radius: 20px;
+    border-right: none;
+  }
