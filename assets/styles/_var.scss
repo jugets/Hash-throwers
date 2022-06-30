@@ -22,3 +22,26 @@ $secondary-white: #F0F0F0;
 $primary-orange: #E79759;
 $secondary-orange: #E77620;
 
+
+/* Modification of the scrollbar properties */
+/* Works on Firefox */
+* {
+    scrollbar-width: none;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+    margin-left: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: none;
+    border-right: 1px solid $secondary-black;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: $primary-orange;
+    border-radius: 20px;
+    border-right: none;
+  }
