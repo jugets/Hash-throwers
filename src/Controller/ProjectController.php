@@ -21,4 +21,10 @@ class ProjectController extends AbstractController
     {
         return $this->render('project/list.html.twig');
     }
+
+    #[Route('/project/details/{id}', name: 'details', requirements: ['id' => '\d+'])]
+    public function details(): Response
+    {
+        return $this->render('project/details.html.twig');
+    }
 }
