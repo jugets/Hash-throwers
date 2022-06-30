@@ -15,6 +15,14 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <header class="apside-header">
+            <div class="search border border-1 d-flex mt-5">
+                <input type="search-input" class="form-control border-0" id="search" name="search">
+                <img class="loupe" src="{{ asset('build/images/loupe.png') }}">
+            </div>
+            <img class="apside-header-logo" src="{{ asset('build/images/logos/Apside_collab.png') }}">
+        </header>
+        {% block body %}
+        {% endblock %}
     </body>
 </html>

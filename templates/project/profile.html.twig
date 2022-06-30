@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Profile
+{% endblock %}
+
+{% block body %}
+	<div class="d-flex align-items-start">
+		<div class="navbar-reduce"></div>
+
+		<div class="main-container">
+
+			<div>
+				<img class="img-apside-robot" src="{{ asset('build/images/apside_robot_1.png') }}"/>
+			</div>
+
+			<div class="bubble">
+				<div class="bubble-text">
+					<h2 class="text-center mt-3 mb-3">Who are you ?</h2>
+					<p class="text-center">
+						<a href="#">I'm a collaborator</a>
+					</p>
+					<p class="text-center">
+						<a href="#">
+							I'm a commercial</a>
+					</p>
+					<p class="text-center">
+						<a href="{{ path('profile_developer') }}">I'm a developer</a>
+					</p>
+					<p class="text-center">
+						<a href="#">I'm a client</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

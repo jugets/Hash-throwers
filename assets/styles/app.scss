@@ -1,9 +1,48 @@
 @import "~bootstrap/scss/bootstrap";
+@import "_var.scss";
+@import "Project/list.scss";
+@import "Project/card/_list_card.scss";
+@import "Project/index";
+@import "Project/profile.scss";
+@import "Project/developer.scss";
+@import "Project/project.scss";
+@import "Project/project_type.scss";
 @import "sidebar";
-@import "var";
-
 
 body {
-    background-color: lightgray;
+    overflow-x: hidden;
+    .search {
+        width: 600px;
+        #search-input {
+            width: 10em;
+            margin-left: 300px;
+            border: none;
+        }
+        .loupe {
+            width: 40px;
+        }
+    }
+    .apside-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 340px;
+        height: 120px;
+        padding-right: 30px;
+        .apside-header-logo {
+            height: 80px;
+        }
+    }
 }
 
+.main-container {
+    width: 100%;
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.img-apside-robot {
+    height: 600px;
+}
