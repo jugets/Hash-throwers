@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Profile
+{% block title %}Hello ProjectController!
 {% endblock %}
 
 {% block body %}
@@ -15,19 +15,18 @@
 
 			<div class="bubble">
 				<div class="bubble-text">
-					<h2 class="text-center mt-3 mb-3">Who are you ?</h2>
+					<h2 class="text-center mt-4">What type of project ?</h2>
 					<p class="text-center">
-						<a href="#">I'm a collaborator</a>
+						<a href="{{ path('feature_language') }}">PHP</a>
 					</p>
 					<p class="text-center">
-						<a href="#">
-							I'm a commercial</a>
+						<a href="{{ path('feature_language') }}">JavaScript</a>
 					</p>
 					<p class="text-center">
-						<a href="{{ path('profile_developer') }}">I'm a developer</a>
+						<a href="{{ path('feature_language') }}">Java</a>
 					</p>
 					<p class="text-center">
-						<a href="#">I'm a client</a>
+						<a href="{{ path('feature_language') }}">All</a>
 					</p>
 				</div>
 			</div>
