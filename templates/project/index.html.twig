@@ -6,11 +6,20 @@
 {% block body %}
 	<div class="d-flex align-items-start justify">
 		<div class="navbar"></div>
-		<div class="d-flex w-100 justify-content-center">
+		<div class="d-flex flex-column w-100 align-items-center">
 			<div class="search border border-1 d-flex mt-5">
 				<input type="search-input" class="form-control border-0" id="search" name="search">
 				<img class="loupe" src="{{ asset('build/images/loupe.png') }}">
 			</div>
+            <div class="bubble">
+                <div class="bubble-text">
+                <h2 class="text-center p-3">Hi, I'm here to help you !</h2>
+                <div class="row row-cols-2">
+                    <p class="text-center">No, thanks !<a href="#"> >></a></p>
+                    <p class="text-center">Let's start<a href="{{path('profile')}}"> >></a></p>
+                </div>
+                </div>
+            </div>
 		</div>
 	</div>
 {% endblock %}

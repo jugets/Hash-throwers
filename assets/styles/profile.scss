@@ -1,4 +1,4 @@
-.navbar {
+.navbar-reduce {
     width: 70px;
     background-color: gray;
     height: 100vh;
@@ -11,7 +11,7 @@
 }
 
 .bubble {
-    margin-left: 600px;
+    margin-left: 20em;
     margin-top: 50px;
     .bubble-text {
             background:$primary-orange; 
