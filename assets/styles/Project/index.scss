@@ -24,7 +24,7 @@
 .bubble {
     margin-top: 5em;
     .bubble-text {
-            background:$secondary-orange; 
+            background:$primary-orange; 
             padding: 7px 15px; 
             border-radius: 70% 70%;
             width: 600px;
@@ -35,7 +35,7 @@
         content:""; 
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
-        border-top: 20px solid $secondary-orange;
+        border-top: 20px solid $primary-orange;
         position: absolute;
     }
     h2 {
