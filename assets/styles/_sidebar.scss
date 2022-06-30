@@ -81,13 +81,6 @@ aside {
                 position: relative;
                 height: 40px;
 
-                .icone {
-                    margin-right: 20px;
-                    font-size: 20px;
-                    width: 25px;
-                    text-align: center;
-                }
-
                 .arrow {
                     position: absolute;
                     right: 0;
@@ -110,11 +103,11 @@ aside {
 
         .sub_menu {
             border : 1px white solid;
-            width: 100%;
-            max-height: 0;
+            //width: 100%;
+            //max-height: 0;
             transition: 0.5s;
             
-            li {
+            /* li {
                 height: 2.8em;
                 margin: 0px;
                 padding-left: 0.9em;
@@ -127,7 +120,7 @@ aside {
                         //color: $user-bg-color;
                     }
                 }
-            }
+            }*/
         }
     }
 }
@@ -141,6 +134,9 @@ li.active {
         transform: rotate(90deg);
     }
 }
+.fa-chevron-right{
+    display: none;
+}
 
 aside.expand {
     width: 70px;
@@ -149,15 +145,8 @@ aside.expand {
         display: none;
     }
 
-    .menu_icon>.menu_sidebar {
+    .menu_icon>.fa-chevron-right {
         display: initial;
     }
 }
 
-.right {
-    margin-right: 300px;
-}
-
-.visible {
-    display: block;
-}
