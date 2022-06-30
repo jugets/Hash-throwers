@@ -41,6 +41,11 @@
         height: 550px;
         background-color: rgb(223, 223, 223);
     }
+    .project-details-return-icon {
+        position: absolute;
+        top: -55px;
+        cursor: pointer;
+    }
     .project-details-first-content {
         width: 620px;
         .project-details-first-content-image {
