@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProjectController!{% endblock %}
+
+{% block body %}
+<div class="d-flex align-items-start">
+    <div class="navbar-reduce"></div>
+    <div class="body-page">
+        <div class="search border border-1 d-flex mt-5">
+			<input type="search-input" class="form-control border-0" id="search" name="search">
+			<img class="loupe" src="{{ asset('build/images/loupe.png') }}">
+		</div>
+
+        <div class="bubble">
+            <div class="bubble-text">
+            <h2 class="text-center mt-4">What type of project ?</h2>
+                <p class="text-center"><a href="{{ path('feature_language') }}">PHP</a></p>
+                <p class="text-center"><a href="{{ path('feature_language') }}">JavaScript</a></p>
+                <p class="text-center"><a href="{{ path('feature_language') }}">Java</a></p>
+                <p class="text-center"><a href="{{ path('feature_language') }}">All</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+{% endblock %}

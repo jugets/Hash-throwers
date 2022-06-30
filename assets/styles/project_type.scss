@@ -33,6 +33,8 @@
             background:$secondary-orange; 
             padding: 7px 15px; 
             border-radius: 70% 70%;
+            width: 600px;
+            color: $primary-black;
         }
     .bubble-text::after{
         margin-left: 200px;
@@ -58,7 +60,6 @@
         content: '';
         display: block;
         position: absolute;
-        bottom: 1px;
         width: 0%;
         left: 0px;
         height: 2px;
@@ -67,7 +68,6 @@
     }
     a:hover:after {
         width: 100%;
+        $color: $secondary-blue;
     }
 }
-
-

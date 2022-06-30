@@ -16,7 +16,7 @@
 
 #logo {
     width: 10em;
-    margin-left: 300px;
+    margin-left: 1000px;
     border: none;
 }
 
@@ -33,13 +33,15 @@
             background:$secondary-orange; 
             padding: 7px 15px; 
             border-radius: 70% 70%;
+            width: 600px;
+            color: $primary-black;
         }
     .bubble-text::after{
         margin-left: 200px;
         content:""; 
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
-        border-top: 20px solid $secondary-orange;
+        border-top: 20px solidsecondary-orange;
         position: absolute;
     }
     h2 {
@@ -58,7 +60,6 @@
         content: '';
         display: block;
         position: absolute;
-        bottom: 1px;
         width: 0%;
         left: 0px;
         height: 2px;
@@ -67,7 +68,6 @@
     }
     a:hover:after {
         width: 100%;
+        $color: $secondary-blue;
     }
 }
-
-
