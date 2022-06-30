@@ -1,4 +1,10 @@
-@import "_var.scss";
+@import "~bootstrap/scss/bootstrap";
+@import "var";
+@import "index";
+@import "profile";
+@import "developer";
+@import "project";
+@import "project_type";
 @import "Project/list.scss";
 @import "Project/card/_list_card.scss";
 @import "Project/details.scss";
@@ -19,10 +25,3 @@ body {
 }
 
 
-@import "~bootstrap/scss/bootstrap";
-@import "var";
-@import "index";
-@import "profile";
-@import "developer";
-@import "project";
-@import "project_type";
