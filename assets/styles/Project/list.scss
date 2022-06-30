@@ -1,13 +1,34 @@
 @import "../_var.scss";
 
+.project-list-border {
+    display: flex;
+    justify-content: flex-end;
+    height: 15px;
+    margin-left: 400px;
+    margin-right: 180px;
+    margin-top: 130px;
+    .project-list-border-line {
+        width: 800px;
+        border-bottom: 2px solid black;
+        margin-right: 5px;
+    }
+    .project-list-border-text {
+        font-family: $title-font;
+        font-weight: bolder;
+        font-size: 11px;
+        margin-bottom: 0;
+        padding-top: 3px;
+    }
+}
+
 .project-list-main-content {
     display: flex;
     width: auto;
     height: 895px;
-    padding-top: 95px;
     margin-left: 90px;
     padding-left: 120px;
     margin-right: 210px;
+    padding-top: 10px;
     gap: 20px;
     .project-list-main-content-title {
         position: relative;
@@ -73,6 +94,6 @@
         margin-left: 100px;
         padding-left: 50px;
         gap: 50px;
-        padding: 20px 0;
+        padding: 0 0 20px 0;
     }
 }
