@@ -65,3 +65,8 @@
         $color: $secondary-blue;
     }
 }
+
+.bg-img {
+    background-image: linear-gradient(white, rgba(0, 0, 0, 0.7)) ,url('../../images/network-2.png');
+    opacity: 0.8;
+}

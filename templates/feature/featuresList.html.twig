@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block body %}
-	<div class="d-flex align-items-start">
+	<div class="bg-img d-flex align-items-start">
 		<div class="navbar-reduce"></div>
 		<div class="main-container">
 			<div>
@@ -16,7 +16,7 @@
 				<div class="row row-cols-3 mb-5 mx-5">
 					{% for feature in features %}
 						<div class="col">
-							<a href="{{ path('index') }}">{{feature.name}}</a>
+							<a href="{{ path('project_list') }}">{{feature.name}}</a>
 						</div>
 					{% endfor %}
 				</div>
