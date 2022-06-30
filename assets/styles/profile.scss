@@ -16,8 +16,7 @@
 
 #logo {
     width: 10em;
-    margin-left: 300px;
-    border: none;
+    margin-top: 50px;
 }
 
 .body-page {
@@ -26,8 +25,15 @@
     align-items: center;
 }
 
+.content-search-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 300px;
+}
+
 .bubble {
-    margin-left: 600px;
+    margin-left: 20em;
     margin-top: 50px;
     .bubble-text {
             background:$secondary-orange; 
