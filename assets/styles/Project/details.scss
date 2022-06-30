@@ -6,7 +6,7 @@
     height: 15px;
     margin-left: 400px;
     margin-right: 145px;
-    margin-top: 130px;
+    margin-top: 120px;
     .project-details-border-line {
         width: 800px;
         border-bottom: 2px solid black;
@@ -37,7 +37,7 @@
         z-index: -1;
         top: 144px;
         left: 258px;
-        width: 1600px;
+        width: 1567px;
         height: 550px;
         background-color: rgb(223, 223, 223);
     }
@@ -99,9 +99,9 @@
         .project-details-second-content-title {
             font-family: $title-font;
             color: $secondary-blue;
-            font-size: 50px;
+            font-size: 45px;
             font-weight: bolder;
-            line-height: 60px;
+            line-height: 54px;
             margin-bottom: 40px;
             padding-left: 67px;
         }
@@ -117,7 +117,7 @@
         .project-details-second-content-image {
             width: 100%;
             height: 400px;
-            margin-top: 78px;
+            margin-top: 50px;
         }
     }
 
