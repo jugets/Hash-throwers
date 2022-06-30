@@ -1,20 +1,16 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProjectController!{% endblock %}
+{% block title %}Project-search
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/vincent/Bureau/DevWeb/Student/wildCodeSchool/Hackaton/Hackathon 06-22/Hash-throwers/src/Controller/ProjectController.php'|file_link(0) }}">src/Controller/ProjectController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/vincent/Bureau/DevWeb/Student/wildCodeSchool/Hackaton/Hackathon 06-22/Hash-throwers/templates/project/index.html.twig'|file_link(0) }}">templates/project/index.html.twig</a></code></li>
-    </ul>
-</div>
+	<div class="d-flex align-items-start justify">
+		<div class="navbar"></div>
+		<div class="d-flex w-100 justify-content-center">
+			<div class="search border border-1 d-flex mt-5">
+				<input type="search-input" class="form-control border-0" id="search" name="search">
+				<img class="loupe" src="{{ asset('build/images/loupe.png') }}">
+			</div>
+		</div>
+	</div>
 {% endblock %}
