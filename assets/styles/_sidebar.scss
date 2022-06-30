@@ -80,6 +80,9 @@ aside {
             transition: 0.5s;
             letter-spacing: 1px;
             font-weight: 700;
+            &:first-child {
+                padding-bottom: 20px;
+            }
             &:hover {
                 background: #E79759;
             }
