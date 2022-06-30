@@ -26,7 +26,7 @@ window.onload = () => {
     icon.onclick = () => {
         aside.classList.toggle("reduce");
     };
-
+/* 
    for (let i of li) {
         i.onclick = activeLi;
     }
@@ -35,5 +35,48 @@ window.onload = () => {
         const list = Array.from(li);
         list.forEach((e) => e.classList.remove("active"));
         this.classList.add("active");
+    }  */
+
+    const buttonProject = document.getElementById("arrow1");
+    const buttonLangage = document.getElementById("arrow2");
+    const buttonFeature = document.getElementById("arrow3");
+    const buttonDoamin = document.getElementById("arrow4");
+    const menu = document.getElementById("sub_menu");
+    
+
+   buttonLangage.addEventListener("click", () => {
+        const menu = document.getElementById("sub_menu");
+        const button = document.getElementById("fleche");
+        menu.style.maxHeight = "150px";
+        button.style.rotate = "90deg";
+        if (menu.style.maxHeight = "150px") {
+            buttonLangage.addEventListener("click", () => { 
+                menu.style.maxHeight = "0px";
+                button.style.rotate = "0deg";
+            });
+        } else if (menu.style.maxHeight = "0px") {
+            buttonLangage.addEventListener("click", () => { 
+                menu.style.maxHeight = "150px";
+            });
+        } 
+    });
+
+
+   buttonFeature.addEventListener("click", () => {
+    const menu = document.getElementById("sub_menu_feature");
+    const button = document.getElementById("fleche1");
+    menu.style.maxHeight = "200px";
+    button.style.rotate = "90deg";
+    if (menu.style.maxHeight = "200px") {
+        buttonFeature.addEventListener("click", () => { 
+            menu.style.maxHeight = "0px";
+            button.style.rotate = "0deg";
+        });
+    } else if (menu.style.maxHeight = "0px") {
+        buttonFeature.addEventListener("click", () => { 
+            menu.style.maxHeight = "200px";
+        });
     } 
+});
+
 }
