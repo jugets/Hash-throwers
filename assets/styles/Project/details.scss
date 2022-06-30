@@ -1,2 +1,119 @@
 @import "../_var.scss";
 
+.project-details-border {
+    display: flex;
+    justify-content: flex-end;
+    height: 15px;
+    margin-left: 400px;
+    margin-right: 145px;
+    margin-top: 130px;
+    .project-details-border-line {
+        width: 800px;
+        border-bottom: 2px solid black;
+        margin-right: 5px;
+    }
+    .project-details-border-text {
+        font-family: $title-font;
+        font-weight: bolder;
+        font-size: 11px;
+        margin-bottom: 0;
+        padding-top: 3px;
+    }
+}
+
+.project-details-main-content {
+    position: relative;
+    display: flex;
+    width: 1720px;
+    height: 820px;
+    margin-left: 90px;
+    padding-left: 300px;
+    margin-right: 210px;
+    padding-top: 10px;
+    gap: 100px;
+    z-index: 0;
+    .project-details-background {
+        position: absolute;
+        z-index: -1;
+        top: 144px;
+        left: 258px;
+        width: 1600px;
+        height: 550px;
+        background-color: rgb(223, 223, 223);
+    }
+    .project-details-first-content {
+        width: 620px;
+        .project-details-first-content-image {
+            width: 100%;
+            height: 465px;
+        }
+        .project-details-first-content-title {
+            font-family: $text-font;
+            color: $primary-orange;
+            font-size: 26px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        .project-details-first-content-text {
+            font-family: $text-font;
+            color: $secondary-blue;
+            text-align: justify;
+            font-size: 16px;
+            padding: 0 30px;
+        }
+        .project-details-first-content-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary-green;
+            font-family: $text-font;
+            font-size: 17px;
+            text-decoration: none;
+            border: 1px solid black;
+            width: 254px;
+            height: 53px;
+            margin-top: 55px;
+            margin-left: 325px;
+            transition: 0.2s;
+            &:hover {
+                background-color: $primary-orange;
+            }
+        }
+    }
+    .project-details-second-content {
+        width: 700px;
+        .project-details-second-content-subtitle {
+            font-family: $text-font;
+            color: $primary-orange;
+            font-size: 39px;
+            font-weight: bolder;
+            padding-top: 60px;
+            margin-bottom: 0;
+            line-height: 10px;
+        }
+        .project-details-second-content-title {
+            font-family: $title-font;
+            color: $secondary-blue;
+            font-size: 50px;
+            font-weight: bolder;
+            line-height: 60px;
+            margin-bottom: 40px;
+            padding-left: 67px;
+        }
+        .project-details-second-content-text {
+            font-family: $text-font;
+            color: $secondary-blue;
+            text-align: justify;
+            font-size: 16px;
+            padding: 0 30px;
+            margin-top: 16px;
+            margin-bottom: 0;
+        }
+        .project-details-second-content-image {
+            width: 100%;
+            height: 400px;
+            margin-top: 78px;
+        }
+    }
+
+}

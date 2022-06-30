@@ -10,7 +10,7 @@
 @import "Project/details.scss";
 
 body {
-    overflow-x: hidden;
+    overflow-x: scroll;
     .apside-header {
         display: flex;
         justify-content: flex-end;
