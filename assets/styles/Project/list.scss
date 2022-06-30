@@ -73,13 +73,16 @@
             }
             .project-list-title-content-button {
                 background-color: transparent;
-                border: 1px solid black;
+                border: 1px solid white;
+                color: white;
                 width: 217px;
                 height: 53px;
                 margin-top: 20px;
                 transition: 0.2s;
                 &:hover {
                     background-color: $primary-green;
+                    color: black;
+                    border: 1px solid black;
                 }
             }
         }

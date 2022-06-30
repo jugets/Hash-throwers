@@ -7,6 +7,12 @@
 @import "sidebar";
 
 body {
+    position: relative;
+    .border-navbar {
+        position: absolute;
+        top: 50px;
+        left: 75px;
+    }
     .apside-header {
         display: flex;
         justify-content: flex-end;
