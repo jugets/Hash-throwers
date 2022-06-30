@@ -17,17 +17,21 @@ require("@fortawesome/fontawesome-free/css/all.min.css");
 require("@fortawesome/fontawesome-free/js/all.js");
 
 window.onload = () => {
-    /*====== Sidebar admin ======*/
+    /*====== Sidebar user ======*/
 
-    let aside = document.querySelector(".sidebar_admin");
+    let aside = document.querySelector(".sidebar_user");
     let icon = aside.querySelector(".menu_icon");
-    let li = aside.querySelectorAll(".side_item");
+    //let li = aside.querySelectorAll(".side_item");
+    let menu = aside.querySelector(".side_user_menu");
+    //let arrow = aside.querySelector(".test");
 
     icon.onclick = () => {
-        aside.classList.toggle("expand");
+        aside.classList.toggle("reduce");
+        //menu.style.display = "none";
     };
 
-    for (let i of li) {
+
+   /* for (let i of li) {
         i.onclick = activeLi;
     }
 
@@ -35,5 +39,5 @@ window.onload = () => {
         const list = Array.from(li);
         list.forEach((e) => e.classList.remove("active"));
         this.classList.add("active");
-    }
+    } */
 }

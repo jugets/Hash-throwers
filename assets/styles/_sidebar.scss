@@ -1,4 +1,4 @@
-.sidebar_admin {
+.sidebar_user {
     color: white;
     //background: $aside-main-color;
 }
@@ -7,7 +7,7 @@ aside {
     position: absolute;
     width: 300px;
     left: 0;
-    height: 1080px;
+    height: 100%;
     background: #0F2334;
     font-family: 'Montserrat';
     //left: -90px;
@@ -20,7 +20,7 @@ aside {
         align-items: center;
     }
 
-    .sidebar_admin_header {
+    .sidebar_user_header {
 
         .menu_icon {
             position: absolute;
@@ -64,7 +64,7 @@ aside {
         }  
     }
 
-    .side_admin_menu {
+    .side_user_menu {
         li {
             list-style: none;
             overflow: hidden;
@@ -102,13 +102,13 @@ aside {
         }
 
         .sub_menu {
-            border : 1px white solid;
-            //width: 100%;
-            //max-height: 0;
+            width: 100%;
+            //max-height: 0px;
             transition: 0.5s;
             
-            /* li {
+             li {
                 height: 2.8em;
+                margin-right: 2em!important;
                 margin: 0px;
                 padding-left: 0.9em;
                 font-size: 1em;
@@ -116,37 +116,49 @@ aside {
                 a {
                     position: initial;
                     display: initial;
-                    &:hover {
-                        //color: $user-bg-color;
-                    }
+                } &:hover {
+                   // background:white;
                 }
-            }*/
+            }
         }
     }
 }
 
 li.active {
     .sub_menu {
-        max-height: 1000px;
+        max-height: 130px;
     }
 
     a>.arrow {
         transform: rotate(90deg);
     }
 }
+
 .fa-chevron-right{
     display: none;
 }
 
-aside.expand {
+aside.reduce {
     width: 70px;
-    left: 0;
+    
     .menu_icon>.xmark {
         display: none;
     }
 
-    .menu_icon>.fa-chevron-right {
+    .menu_icon>.chevron {
         display: initial;
+    }
+
+    .dashboard_title {
+        display: none;
+    }
+
+    .logo_container {
+        display: none;
+    }
+    
+    .side_user_menu {
+        display: none;
     }
 }
 

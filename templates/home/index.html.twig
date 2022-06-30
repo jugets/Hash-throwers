@@ -4,13 +4,13 @@
 {% endblock %}
 
 {% block body %}
-	<aside class="sidebar_admin p-0">
-		<div class="sidebar_admin_header">
+	<aside class="sidebar_user p-0">
+		<div class="sidebar_user_header">
 			<span class="menu_icon">
                 <i class="fa-solid fa-xmark xmark"></i>
-				<i class="fa-solid fa-chevron-right"></i>
+				<i class="fa-solid fa-chevron-right chevron"></i>
 			</span>
-			<div class="logo_container active">
+			<div class="logo_container">
 				<img src="{{ asset('build/images/logos/logo-light.png') }}" class="sidebar_logo" alt="Logo Apside">
 			</div>
 			<div class="dashboard_title">
@@ -18,43 +18,37 @@
 			</div>
 		</div>
 
-		<ul class="side_admin_menu p-0 m-0">
-			<li class="side_item no_hover active">
+		<ul class="side_user_menu p-0 m-0">
+			<li class="side_item active">
 				<a href="#">
-					<i class=""></i>
 					<span>
 						Projects
 					</span>
 					<i class="fa-solid fa-angle-right arrow"></i>
 				</a>
 			</li>
-			<li class="side_item">
+			<li class="side_item active">
 				<a href="#">
-					<i class=""></i>
 					<span>
 						Langages
 					</span>
                     <i class="fa-solid fa-angle-right arrow"></i>
 				</a>
 			</li>
-			 <ul class="sub_menu">
+			<ul class="sub_menu">
 				<li class="">
 					<a href="#">PHP</a>
 				</li>
 				<li>
-					<a href="#">JS</a>
+					<a href="#">JavaScript</a>
 				</li>
 				<li class="">
 					<a href="#">JAVA</a>
-				</li>
-				<li class="">
-					<a href="#">All</a>
 				</li>
 			</ul> 
 
 			<li class="side_item">
 				<a href="#">
-					<i class=""></i>
 					<span>
 						Features
 					</span>
@@ -77,7 +71,6 @@
 			</ul> 
 			<li class="side_item">
 				<a href="#">
-					<i class=""></i>
 					<span>
 						Domains
 					</span>
