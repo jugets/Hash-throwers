@@ -17,6 +17,7 @@ class ProjectController extends AbstractController
     #[Route('/profile', name: 'profile')]
     public function profile(): Response
     {
+
         return $this->render('project/profile.html.twig');
     }
 
@@ -43,5 +44,17 @@ class ProjectController extends AbstractController
     public function list(): Response
     {
         return $this->render('project/list.html.twig');
+    }
+
+    #[Route('/feature', name: 'feature')]
+    public function language(): Response
+    {
+        return $this->render('feature/language.html.twig');
+    }
+
+    #[Route('/feature/language', name: 'feature_language')]
+    public function feature(): Response
+    {
+        return $this->render('feature/featuresList.html.twig');
     }
 }
