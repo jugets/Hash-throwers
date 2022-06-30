@@ -1,11 +1,5 @@
 @import "../_var.scss";
 
-.navbar {
-    width: 300px;
-    background-color: $secondary-blue;
-    height: 100vh;
-}
-
 .search {
     width: 600px;
 }
@@ -68,5 +62,5 @@
 
 .bg-img {
     background-image: linear-gradient(white, rgba(0, 0, 0, 0.7)) ,url('../../images/network-2.png');
-    opacity: 0.8;
+    min-height: 60em;
 }
