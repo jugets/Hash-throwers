@@ -20,9 +20,13 @@
     .bubble-text {
             background:$primary-orange; 
             padding: 7px 15px; 
-            border-radius: 70% 70%;
+            border-radius: 60% 60%;
             width: 600px;
             color: $primary-black;
+            box-shadow:  0 0 20px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 0 10px  rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 0 0 20px  rgba(0, 0, 0, 0.5);
+            -o-box-shadow: 0 0 20px  rgba(0, 0, 0, 0.5);
         }
     .bubble-text::after{
         margin-left: 200px;
@@ -43,6 +47,7 @@
         text-decoration: none;
         color: $primary-white;
         font-family: $text-font;
+        font-size: 1.3em;
     }
     a:after {
         content: '';
