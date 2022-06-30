@@ -107,9 +107,52 @@ aside {
             }
         }
 
-        .sub_menu {
+        #sub_menu {
+            //display: none;
             width: 100%;
-            //max-height: 0px;
+            max-height: 0px;
+            transition: 0.5s;
+            overflow: hidden;
+            
+             li {
+                height: 2.8em;
+                margin-right: 2em!important;
+                margin: 0px;
+                padding-left: 0.9em;
+                font-size: 1em;
+                font-weight: 200;
+                a {
+                    position: initial;
+                    height: 100%;
+                    display: initial;
+                } 
+            }
+        }
+        #sub_menu_feature {
+            //display: none;
+            width: 100%;
+            max-height: 0px;
+            transition: 0.5s;
+            overflow: hidden;
+            
+             li {
+                height: 2.8em;
+                margin-right: 2em!important;
+                margin: 0px;
+                padding-left: 0.9em;
+                font-size: 1em;
+                font-weight: 200;
+                a {
+                    position: initial;
+                    height: 100%;
+                    display: initial;
+                } 
+            }
+        }
+        .sub_menu_feature {
+            //display: none;
+            width: 100%;
+            max-height: 0px;
             transition: 0.5s;
             overflow: hidden;
             
@@ -129,7 +172,6 @@ aside {
         }
     }
 }
-
 
 .chevron{
     display: initial;
@@ -160,14 +202,14 @@ aside.reduce {
     }
 }
 
-li.active {
-    /*.sub_menu {
+/* li.active {
+    .sub_menu {
         max-height: 1000px!important;
         overflow: visible;
-    }*/
-
-    a>.arrow {
-        transform: rotate(90deg);
     }
-}
+
+     a>.arrow {
+        transform: rotate(90deg);
+    } 
+}  */
 
