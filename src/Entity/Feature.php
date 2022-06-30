@@ -21,7 +21,7 @@ class Feature
     #[ORM\Column(type: 'string', length: 255)]
     private $name;
 
-    #[ORM\ManyToMany(targetEntity: project::class, inversedBy: 'features')]
+    #[ORM\ManyToMany(targetEntity: Project::class, inversedBy: 'features')]
     private $projects;
 
     public function __construct()
@@ -66,7 +66,7 @@ class Feature
         return $this->projects;
     }
 
-    public function addProject(project $project): self
+    public function addProject(Project $project): self
     {
         if (!$this->projects->contains($project)) {
             $this->projects[] = $project;
@@ -75,7 +75,7 @@ class Feature
         return $this;
     }
 
-    public function removeProject(project $project): self
+    public function removeProject(Project $project): self
     {
         $this->projects->removeElement($project);
 
