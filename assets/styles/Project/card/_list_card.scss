@@ -29,6 +29,9 @@
         font-size: 13px;
         padding: 0 25px;
     }
+    .project-card-link {
+        text-decoration: none;
+    }
     .project-card-button {
         display: flex;
         align-items: center;
@@ -36,6 +39,7 @@
         background-color: $primary-green;
         font-family: $text-font;
         font-size: 17px;
+        text-decoration: none;
         border: 1px solid black;
         width: 254px;
         height: 53px;
