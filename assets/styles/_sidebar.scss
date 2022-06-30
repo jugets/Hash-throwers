@@ -6,7 +6,7 @@
 aside {
     position: absolute;
     z-index: 15;
-    width: 300px;
+    width: 70px;
     left: 0;
     height: 1080px;
     background: #0F2334;
@@ -22,8 +22,10 @@ aside {
     }
 
     .sidebar_user_header {
-
         .menu_icon {
+            .xmark {
+                display: none;
+            }
             position: absolute;
             right: 0px;
             top: 10px;
@@ -37,6 +39,7 @@ aside {
         }
 
         .logo_container {
+            display: none !important;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -53,6 +56,7 @@ aside {
         }
 
         .dashboard_title {
+            display: none !important;
             color: darken(white, 15%);
             font-size: 1.5em;
             padding-top: 0.15em;
@@ -66,6 +70,7 @@ aside {
     }
 
     .side_user_menu {
+        display: none;
         li {
             list-style: none;
             overflow: hidden;
@@ -127,30 +132,31 @@ aside {
 
 
 .chevron{
-    display: none;
+    display: initial;
 }
 
 aside.reduce {
-    width: 70px;
+    width: 300px;
     
     .menu_icon>.xmark {
-        display: none;
-    }
-
-    .menu_icon>.chevron {
         display: initial;
     }
 
-    .dashboard_title {
+    .menu_icon>.chevron {
         display: none;
     }
 
+    .dashboard_title {
+        display: initial !important;
+        text-align: center;
+    }
+
     .logo_container {
-        display: none;
+        display: initial !important;
     }
     
     .side_user_menu {
-        display: none;
+        display: initial;
     }
 }
 
