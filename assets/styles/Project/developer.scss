@@ -1,0 +1,53 @@
+@import "../_var.scss";
+
+.navbar-reduce {
+    width: 70px;
+    background-color: $secondary-blue;
+    height: 100vh;
+}
+
+.bubble {
+    margin-left: 50em;
+    margin-top: 5em;
+    .bubble-text {
+            background:$secondary-orange; 
+            padding: 7px 15px; 
+            border-radius: 70% 70%;
+            width: 600px;
+            color: $primary-black;
+        }
+    .bubble-text::after{
+        margin-left: 200px;
+        content:""; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solidsecondary-orange;
+        position: absolute;
+    }
+    h2 {
+        font-family: $title-font;
+        color: $primary-white;
+        font-weight: bold;
+    }
+    a {
+        display: inline;
+        position: relative;
+        text-decoration: none;
+        color: $primary-white;
+        font-family: $text-font;
+    }
+    a:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0%;
+        left: 0px;
+        height: 2px;
+        transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+        background: $secondary-blue;
+    }
+    a:hover:after {
+        width: 100%;
+        $color: $secondary-blue;
+    }
+}
